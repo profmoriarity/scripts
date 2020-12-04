@@ -1,5 +1,5 @@
 echo "[+] Fetching subdomains"
-subfinder -d $1 > domains
+#subfinder -d $1 > domains
 echo "[+] Checking http status"
 bash ~/scripts/alive.sh
 
