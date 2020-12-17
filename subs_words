@@ -3,3 +3,13 @@ staging
 admin
 qa
 dev
+prod
+preprod
+stage
+internal
+proxy
+dev2
+test
+testing
+public
+

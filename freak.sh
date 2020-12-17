@@ -1,1 +1,1 @@
-parallel -j50 "httpx -path /{} -threads 200 -title -content-length -status-code -l alive" :::: $1
+parallel -j$3 "httpx -path /{} -threads $2 -title -content-length -status-code -l brute" :::: $1
