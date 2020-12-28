@@ -1,2 +1,2 @@
-cat domains | httpx -silent -threads 500 -json -response-in-json | tee  domains-httpx| jq -s . | ~/scripts/toElastic.py 'httpx'
-cat domains-httpx| jq .url | awk -F'"' '{print $2}' > alive
+cat $1 | httpx -silent -threads 800 -json | tee  $1-httpx| jq -s . | ~/scripts/toElastic.py $2
+cat $1-httpx| jq .url | awk -F'"' '{print $2}' > $1-alive
