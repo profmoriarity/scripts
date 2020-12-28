@@ -1,2 +1,2 @@
-subfinder -d $1 -oJ -o dom.json | jq -s . | ~/scripts/toElastic.py 'subfinder'
-cat dom.json | jq .host | awk -F'"' '{print $2}' | tee domains
+subfinder -d $1 -oJ -o dom | jq -s . | ~/scripts/toElastic.py $2
+cat dom | jq .host | awk -F'"' '{print $2}' | tee domains
