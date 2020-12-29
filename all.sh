@@ -9,3 +9,10 @@ bash ~/scripts/200_status.sh
 bash ~/scripts/urls.sh dummy urls-$1
 bash ~/scripts/nuclei-scan.sh domains alive nuclei-domains-$1
 bash ~/scripts/nuclei-scan.sh urls 200-ok nuclei-urls-$1
+bash ~/scripts/green.sh domains-$1
+bash ~/scripts/green.sh httpx-$1
+bash ~/scripts/green.sh dns-$1
+bash ~/scripts/green.sh ports-$1
+bash ~/scripts/green.sh urls-$1
+bash ~/scripts/green.sh nuclei-domains-$1
+bash ~/scripts/green.sh nuclei-urls-$1

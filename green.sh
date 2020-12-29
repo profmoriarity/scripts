@@ -1,0 +1,2 @@
+curl -XPUT http://172.105.5.96:9200/$1/_settings -d '{"index.number_of_replicas":1}' -H "Content-type: application/json"
+curl -XPUT http://172.105.5.96:9200/$1/_settings -d '{"index.number_of_replicas":0}' -H "Content-type: application/json"
